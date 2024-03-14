@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  height: 100svh;
+  z-index: 1;
+  width: 6svw;
+  background-color: #29b8cc;
+
+  .position {
+    
+    padding: 80px 15px;
+
+    .page {
+      @include flex-center;
+      &_person {
+      }
+      &_icon {
+        img {
+          border-radius: 20px;
+        }
+      }
+      &_name {
+        padding-top: 5px;
+        @include text;
+      }
+      &_link {
+        padding-top: 30px;
+        @include flex-center;
+      }
+    }
+  }
+}

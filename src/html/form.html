@@ -1,0 +1,99 @@
+<section class="calltech">
+    <div class="calltech__container">
+        <div class="calltech__title">
+            <h2>Заказать продукцию</h2>
+        </div>
+        <div class="calltech__btns">
+            <div id="call_btn1" class="calltech__btn active">
+                Оформить заявку
+            </div>
+            <div id="call_btn2" class="calltech__btn">
+                Посмотреть контакты
+            </div>
+        </div>
+        <div class="calltech__blocks">
+            <div id="block_1" class="calltech__block_t active">
+                <form id="form-hard" method="POST">
+                    <div class="calltech__row">
+                        <div class="calltech-inputs">
+                            <div class="calltech__input"><input name="form_name" id="form_title" type="text" required
+                                    placeholder="Ваше имя" value=""></div>
+                            <div class="calltech__input"><input name="form_tel" id="form_tel" type="tel" required
+                                    placeholder="Введите номер" minlength="11" value=""></div>
+                            <div class="calltech__input"><input name="form_email" id="form_email" type="email"
+                                    placeholder="Укажите E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value="">
+                            </div>
+                            <div class="calltech__input"><input name="form_city" id="form_city" type="text"
+                                    placeholder="Город" value=""></div>
+                            <input type="hidden" name="form_title" id="form_title" value="<?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> Cсылка на страницу: <?php echo bloginfo('url');
+                                 echo $_SERVER['REQUEST_URI']; ?>">
+                        </div>
+                        <div class="calltech-areas">
+                            <div class="calltech__textarea"><textarea name="form_message" id="form_message"
+                                    placeholder="Ваше сообщение"></textarea></div>
+                        </div>
+                    </div>
+                    <input type="radio" name="one" id="radio5" required>
+                    <label class="callback_label" for="radio5">
+                        <p4><a id="agree" href="https://partmine.ru/polzovatelskoe-soglashenie/" target="_blank"
+                                style="color:#FFB800;">Согласен</a> на обработку персональных данных</p4>
+                    </label>
+                    <div class="calltech-button"><button type="submit" id="form-submit6" class="calltech-btn"
+                            value="Отправить">Отправить</button></div>
+                </form>
+            </div>
+            <div id="block_2" class="calltech__block_t">
+                <div class="calltech__block_text">
+                    <p>Мы готовы принимать и обрабатывать ваши запросы с понедельника по субботу с 7:30 до 16:00 по
+                        МСК.</p>
+                    <p>Обращаем ваше внимание, что в указанное время наши специалисты будут на связи и готовы ответить
+                        на все ваши вопросы и решить возникшие проблемы. Если у вас возникнут сложности или вопросы,
+                        пожалуйста, не стесняйтесь обращаться к нам.</p>
+                </div>
+                <div class="calltech__contacts">
+                    <div class="calltech__cont">
+                        <div class="calltech_title">Номер телефона:</div>
+                        <div class="calltech_cotact">
+                            <img src="https://partmine.ru/wp-content/themes/Partmine/src/icons/newIcs/webp/Phone-ligth.webp"
+                                alt="">
+                            <a href="tel:+78001016184">8 (800) 101-61-84</a>
+                        </div>
+                        <div class="calltech_cotact">
+                            <img src="https://partmine.ru/wp-content/themes/Partmine/src/icons/newIcs/webp/Phone-ligth.webp"
+                                alt="">
+                            <a href="tel:+79631511511">8 (963) 151-15-11</a>
+                        </div>
+                    </div>
+                    <div class="calltech__cont">
+                        <div class="calltech_title">E-mail адрес:</div>
+                        <div class="calltech_cotact">
+                            <img src="https://partmine.ru/wp-content/themes/Partmine/src/icons/newIcs/webp/Mail-ligth.webp"
+                                alt="">
+                            <a href="mailto:info@partmine.ru">info@partmine.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="calltech_mess">
+                    <div class="calltech_title">
+                        Мы в месседжерах!
+                    </div>
+                    <div class="calltech_imgs">
+                        <a target="_blanck"
+                            href="https://api.whatsapp.com/send/?phone=79631511511&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%A7%D0%B5%D0%BC+%D0%BC%D0%BE%D0%B3%D1%83+%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%3F&app_absent=0"><img
+                                src="https://partmine.ru/wp-content/themes/Partmine/src/icons/newIcs/webp/WhatsApp-ligth.webp"
+                                alt=""></a>
+                        <a target="_blanck" href="viber://chat?number=%2B79631511511"><img
+                                src="https://partmine.ru/wp-content/themes/Partmine/src/icons/newIcs/webp/Viber-ligth.webp"
+                                alt=""></a>
+                        <a target="_blanck" href="https://tlgg.ru/partmine"><img
+                                src="https://partmine.ru/wp-content/themes/Partmine/src/icons/newIcs/webp/Telegram-ligth.webp"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calltech__imgtech">
+        <img src="../images/exc.png" alt="">
+    </div>
+</section>
